@@ -1,13 +1,13 @@
-QT       += core gui
+QT += core gui widgets
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
-TARGET = qt-color-wash
+TARGET = color-wash
 TEMPLATE = app
 
 SOURCES += \
     main.cpp \
     ColorWashWidget.cpp
 
-HEADERS  += ColorWashWidget.h
+HEADERS += ColorWashWidget.h
 
+target.path += /usr/bin
+INSTALLS += target
